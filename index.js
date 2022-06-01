@@ -1,4 +1,11 @@
+//1
 let a = +prompt('Введите число', 0);
 let b = +prompt('Введите число', 0);
 let result = (a + b < 4) ? 'Мало': 'Много';
 alert(result);
+//2
+let login = prompt('Введите Ваш логин');
+let message = (login == 'Сотрудник') ? 'Привет':
+              (login == 'Директор') ? 'Здравствуйте': 
+              (login == "") ? 'Нет логина': "";
+alert(message);
