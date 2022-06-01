@@ -14,7 +14,23 @@ let age = +prompt('Сколько Вам лет?', 0);
 if (age >= 14 && age <= 90) {
     alert('Здравствуйте!');
 } else if (age < 14 || age > 90) {
-    alert('До свидания!')
+    alert('До свидания!');
 } else {
-    alert('Введите Ваш возраст!')
+    alert('Введите Ваш возраст!');
+}
+//5
+let user = prompt('Кто там?', '');
+if (user == 'Админ') {
+    let password = prompt('Пароль?', '');
+    if (password == 'Я Главный') {
+        alert('Здравствуйте!');
+    } else if (password == '' || password == null) {
+        alert('Отменено');
+    } else {
+        alert('Неверный пароль');
+    }
+} else if (user == '', user == null) {
+    alert('Отменено');
+} else {
+    alert('Я Вас не знаю');
 }
