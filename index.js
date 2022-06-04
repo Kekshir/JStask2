@@ -16,3 +16,16 @@ let number;
 do {
     number = +prompt('Введите число больше 100', 0);
 } while (number <= 100 || null);
+
+//4
+let num = 0;
+let n = 1000;
+while (n >= 50) {
+    n /= 2;
+    num++;
+    alert(num);
+}
+//for (let n = 1000; n < 50; num++) {
+//    n /= 2;
+//}
+//alert(num);
