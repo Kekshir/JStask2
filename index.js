@@ -1,36 +1,12 @@
 //1
-let a = +prompt('Введите число', 0);
-let b = +prompt('Введите число', 0);
-let result = (a + b < 4) ? 'Мало': 'Много';
-alert(result);
+//let i = 3;
+//while (i) {
+//  alert( i-- );
+//} // последним значением будет 1, тк i-- будет уменьшеть значение пока i=0, т.е. сначла будет выведено 3, затем уменьшиться на один до 2 и тд
+
 //2
-let login = prompt('Введите Ваш логин');
-let message = (login == 'Сотрудник') ? 'Привет':
-              (login == 'Директор') ? 'Здравствуйте': 
-              (login == "") ? 'Нет логина': "";
-alert(message);
-//3 4
-let age = +prompt('Сколько Вам лет?', 0);
-if (age >= 14 && age <= 90) {
-    alert('Здравствуйте!');
-} else if (age < 14 || age > 90) {
-    alert('До свидания!');
-} else {
-    alert('Введите Ваш возраст!');
-}
-//5
-let user = prompt('Кто там?', '');
-if (user == 'Админ') {
-    let password = prompt('Пароль?', '');
-    if (password == 'Я Главный') {
-        alert('Здравствуйте!');
-    } else if (password == '' || password == null) {
-        alert('Отменено');
-    } else {
-        alert('Неверный пароль');
-    }
-} else if (user == '', user == null) {
-    alert('Отменено');
-} else {
-    alert('Я Вас не знаю');
+let i = 0;
+while (i < 3) {
+    alert(`number ${i}!`);
+    i++
 }
