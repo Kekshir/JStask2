@@ -14,3 +14,13 @@ function checkSpam(str) {
 console.log(checkSpam('buy ViAgRA now'));
 console.log(checkSpam('free xxxxx'));
 console.log(checkSpam("innocent rabbit"));
+
+//7 
+function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+        return str.slice(0, maxlength - 1) + '...';
+    } else {
+        return str;
+    }
+}
+console.log(truncate('trdtfghjkpo;l dyfg8iolkj uyfghojilm  iuhyujk', 10))
